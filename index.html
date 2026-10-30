@@ -1,0 +1,1043 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NovaReach Digital is a full-service digital marketing agency helping brands grow through SEO, social media, paid advertising and creative strategy.">
+<meta name="theme-color" content="#090914">
+
+<title>NovaReach Digital | Grow Beyond Limits</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #090914;
+  --card: #111126;
+  --card2: #17172f;
+  --purple: #8758ff;
+  --blue: #3588ff;
+  --cyan: #54d6ff;
+  --white: #f7f7ff;
+  --muted: #a3a3bd;
+  --border: rgba(255,255,255,.09);
+  --gradient: linear-gradient(110deg,#9565ff,#398aff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+.container {
+  width: min(1160px, 90%);
+  margin: auto;
+}
+
+section {
+  padding: 95px 0;
+}
+
+.gradient {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--gradient);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 13px 23px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px #7148ff50;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #7770a9;
+}
+
+.section-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2rem,4vw,3.1rem);
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+.section-subtitle {
+  color: var(--muted);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.eyebrow {
+  color: #a991ff;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: .78rem;
+  text-transform: uppercase;
+}
+
+/* NAVIGATION */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(9,9,20,.91);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+}
+
+nav {
+  height: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.logo span {
+  color: #986bff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 27px;
+  align-items: center;
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  color: white;
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 80% 30%,#542a9d35,transparent 40%),
+    radial-gradient(ellipse at 10% 80%,#155ca32b,transparent 35%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3rem,6vw,5.3rem);
+  line-height: 1.06;
+  letter-spacing: -3px;
+  margin: 24px 0;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 1.08rem;
+  max-width: 550px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.hero-note {
+  margin-top: 30px;
+  color: #b8b8d0;
+  font-size: .85rem;
+}
+
+.hero-note span {
+  color: #53d9b2;
+}
+
+.dashboard {
+  padding: 25px;
+  border: 1px solid #ffffff18;
+  background: linear-gradient(140deg,#211c3c,#101329);
+  border-radius: 25px;
+  box-shadow: 0 30px 100px #0009;
+}
+
+.dashboard-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.dashboard-top small {
+  color: var(--muted);
+}
+
+.live {
+  color: #4ee5b5;
+  font-size: .8rem;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+
+.metric {
+  padding: 18px;
+  background: #ffffff09;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+}
+
+.metric small {
+  color: var(--muted);
+}
+
+.metric strong {
+  display: block;
+  font-size: 1.8rem;
+  margin: 7px 0;
+}
+
+.metric em {
+  color: #4fe3b2;
+  font-size: .75rem;
+  font-style: normal;
+}
+
+.chart {
+  margin-top: 18px;
+  height: 140px;
+  background: linear-gradient(180deg,#865aff30,transparent);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.chart svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* SERVICES */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.service-card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 17px;
+  transition: .3s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--purple);
+  box-shadow: 0 15px 45px #764dff15;
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  background: #8758ff22;
+  border-radius: 13px;
+  font-size: 1.55rem;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+}
+
+.service-card p {
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-text p {
+  color: var(--muted);
+  margin-top: 15px;
+}
+
+.about-list {
+  list-style: none;
+  margin: 25px 0;
+}
+
+.about-list li {
+  margin: 12px 0;
+  color: #d5d5e7;
+}
+
+.about-list li::before {
+  content: "✓";
+  color: #62dfbb;
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+.about-box {
+  background: linear-gradient(140deg,#211a43,#111b37);
+  border: 1px solid var(--border);
+  padding: 35px;
+  border-radius: 22px;
+}
+
+.about-box h3 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+}
+
+.about-box p {
+  color: var(--muted);
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.about-stat {
+  background: #ffffff09;
+  padding: 15px 7px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.about-stat strong {
+  display: block;
+  font-size: 1.5rem;
+  color: #aa91ff;
+}
+
+.about-stat small {
+  color: var(--muted);
+}
+
+/* PROCESS */
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 17px;
+}
+
+.process-card {
+  padding: 25px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.step {
+  color: #a58aff;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.process-card h3 {
+  margin: 15px 0 9px;
+}
+
+.process-card p {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+/* PORTFOLIO */
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.project {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 17px;
+  border-radius: 17px;
+}
+
+.project-image {
+  height: 180px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  background: linear-gradient(130deg,#583a91,#175d93);
+  margin-bottom: 20px;
+}
+
+.project:nth-child(2) .project-image {
+  background: linear-gradient(130deg,#7c416d,#bc794c);
+}
+
+.project:nth-child(3) .project-image {
+  background: linear-gradient(130deg,#164a80,#6753a7);
+}
+
+.project p {
+  color: var(--muted);
+  font-size: .9rem;
+  margin-top: 8px;
+}
+
+.tag {
+  display: inline-block;
+  background: #895cff20;
+  color: #c1aeff;
+  padding: 5px 10px;
+  font-size: .75rem;
+  border-radius: 20px;
+  margin-top: 14px;
+}
+
+/* PRICING */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.price-card {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.price-card.featured {
+  border-color: #956aff;
+  box-shadow: 0 0 35px #8758ff19;
+}
+
+.popular {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: .7rem;
+  background: #8758ff;
+  padding: 5px 9px;
+  border-radius: 20px;
+}
+
+.price {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 18px 0 3px;
+}
+
+.price small {
+  font-size: .8rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.price-card p {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.price-card ul {
+  list-style: none;
+  margin: 25px 0;
+}
+
+.price-card li {
+  color: #c6c6d8;
+  margin: 12px 0;
+  font-size: .9rem;
+}
+
+.price-card li::before {
+  content: "✓";
+  color: #4de0ae;
+  margin-right: 9px;
+}
+
+.price-card .btn {
+  width: 100%;
+}
+
+/* TESTIMONIAL */
+
+.testimonial {
+  max-width: 780px;
+  margin: auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 38px;
+  text-align: center;
+}
+
+.stars {
+  color: #ffcc68;
+  letter-spacing: 5px;
+  font-size: 1.2rem;
+}
+
+.testimonial blockquote {
+  font-size: 1.15rem;
+  margin: 18px 0;
+}
+
+.testimonial small {
+  color: var(--muted);
+}
+
+/* CONTACT */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 35px;
+}
+
+.contact-info {
+  display: grid;
+  gap: 15px;
+  align-content: start;
+}
+
+.contact-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 19px;
+  border-radius: 13px;
+}
+
+.contact-item small {
+  display: block;
+  color: var(--muted);
+  margin-top: 5px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 14px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+
+input, textarea, select {
+  width: 100%;
+  background: #111126;
+  color: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #8758ff;
+}
+
+textarea {
+  min-height: 135px;
+  resize: vertical;
+}
+
+select option {
+  background: #111126;
+}
+
+.form-message {
+  color: #9f9fba;
+  font-size: .82rem;
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 30px 0;
+  color: var(--muted);
+  font-size: .88rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 18px;
+}
+
+.social-links a:hover {
+  color: white;
+}
+
+/* ANIMATIONS */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: .7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:900px) {
+  .hero-grid,.about-grid,.contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .dashboard {
+    max-width: 650px;
+  }
+
+  .services-grid,.portfolio-grid,.pricing-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media(max-width:650px) {
+  section {
+    padding: 70px 0;
+  }
+
+  nav {
+    height: 68px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background: #101025;
+    padding: 25px 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .hero h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .services-grid,.portfolio-grid,.pricing-grid,.process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard {
+    padding: 15px;
+  }
+
+  .metric {
+    padding: 13px;
+  }
+
+  .metric strong {
+    font-size: 1.45rem;
+  }
+
+  .testimonial {
+    padding: 25px;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior: auto; }
+  *,*::before,*::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="#home" class="logo">NovaReach<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a href="#contact" class="btn nav-cta">Let's Talk ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+  <div class="container hero-grid">
+
+    <div class="reveal">
+      <span class="eyebrow">✦ YOUR DIGITAL GROWTH PARTNER</span>
+
+      <h1>
+        Grow Your Brand.<br>
+        <span class="gradient">Reach Beyond.</span>
+      </h1>
+
+      <p>
+        We help ambitious brands build their digital presence,
+        connect with the right audience and turn online attention
+        into meaningful business growth.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">Start Your Project ↗</a>
+        <a href="#services" class="btn btn-outline">Explore Services</a>
+      </div>
+
+      <div class="hero-note">
+        <span>✓</span> Strategy-driven &nbsp;
+        <span>✓</span> Creative solutions &nbsp;
+        <span>✓</span> Growth-focused
+      </div>
+    </div>
+
+    <div class="dashboard reveal">
+      <div class="dashboard-top">
+        <strong>Marketing Overview</strong>
+        <span class="live">● DEMO</span>
+      </div>
+
+      <div class="metric-grid">
+        <div class="metric">
+          <small>Audience Reach</small>
+          <strong>248K</strong>
+          <em>Illustrative figure</em>
+        </div>
+
+        <div class="metric">
+          <small>Engagement</small>
+          <strong>8.6%</strong>
+          <em>Illustrative figure</em>
+        </div>
+
+        <div class="metric">
+          <small>Leads</small>
+          <strong>1,420</strong>
+          <em>Illustrative figure</em>
+        </div>
+
+        <div class="metric">
+          <small>Campaign ROI</small>
+          <strong>3.8x</strong>
+          <em>Illustrative figure</em>
+        </div>
+      </div>
+
+      <div class="chart">
+        <svg viewBox="0 0 500 140" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#9665ff" stop-opacity=".5"/>
+              <stop offset="100%" stop-color="#9665ff" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path d="M0 120 Q50 110 90 90 T180 85 T270 55 T360 45 T500 10 L500 140 L0 140Z" fill="url(#chartFill)"/>
+          <path d="M0 120 Q50 110 90 90 T180 85 T270 55 T360 45 T500 10"
+            fill="none" stroke="#a88aff" stroke-width="3"/>
+        </svg>
+      </div>
+      <small style="color:#a3a3bd">Illustrative dashboard — not actual client results.</small>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">WHAT WE DO</span>
+      <h2 class="section-title">Our Digital <span class="gradient">Services</span></h2>
+      <p class="section-subtitle">
+        Everything your business needs to build a powerful digital presence.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card reveal">
+        <div class="service-icon">🔍</div>
+        <h3>Search Engine Optimization</h3>
+        <p>Improve search visibility with keyword research, technical SEO and strategic content optimization.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">📱</div>
+        <h3>Social Media Marketing</h3>
+        <p>Build your brand through creative content, social strategy and meaningful audience engagement.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">🎯</div>
+        <h3>Paid Advertising</h3>
+        <p>Reach potential customers through targeted Google, Meta and other advertising campaigns.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">✍️</div>
+        <h3>Content Marketing</h3>
+        <p>Create engaging blogs, videos, captions and campaigns that communicate your brand story.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">💻</div>
+        <h3>Website Development</h3>
+        <p>Build modern, responsive and user-friendly websites designed around your business goals.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">📊</div>
+        <h3>Analytics & Strategy</h3>
+        <p>Track performance, understand your audience and improve marketing decisions with data.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+  <div class="container about-grid">
+
+    <div class="about-text reveal">
+      <span class="eyebrow">ABOUT NOVAREACH</span>
+      <h2 class="section-title">
+        We Turn Digital Ideas Into <span class="gradient">Real Growth.</span>
+      </h2>
+
+      <p>
+        NovaReach Digital is a full-service digital marketing agency
+        focused on helping businesses grow in an increasingly digital world.
+      </p>
+
+      <p>
+        We combine creative thinking, strategic planning and modern
+        marketing techniques to help brands build visibility and connect
+        with their audiences.
+      </p>
+
+      <ul class="about-list">
+        <li>Customized marketing strategies</li>
+        <li>Creative and consistent brand communication</li>
+        <li>Transparent campaign reporting</li>
+        <li>Continuous optimization</li>
+      </ul>
+
+      <a href="#contact" class="btn">Work With Us ↗</a>
+    </div>
+
+    <div class="about-box reveal">
+      <span class="eyebrow">OUR PHILOSOPHY</span>
+      <h3>Think Smart.<br><span class="gradient">Create Better.</span><br>Grow Together.</h3>
+
+      <p>
+        We believe effective digital marketing starts with understanding
+        people, creating value and delivering the right message through
+        the right channels.
+      </p>
+
+      <div class="about-stats">
+        <div class="about-stat">
+          <strong>01</strong>
+          <small>Discover</small>
+        </div>
+        <div class="about-stat">
+          <strong>02</strong>
+          <small>Execute</small>
+        </div>
+        <div class="about-stat">
+          <strong>03</strong>
+          <small>Optimize</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROCESS -->
+
+<section id="process">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">HOW WE WORK</span>
+      <h2 class="section-title">Our Growth <span class="gradient">Process</span></h2>
+      <p class="section-subtitle">A clear and collaborative approach from planning to performance.</p>
+    </div>
+
+    <div class="process-grid">
+      <article class="process-card reveal">
+        <span class="step">STEP 01</span>
+        <h3>Discover</h3>
+        <p>Understand your business, audience, competitors and objectives.</p>
+      </article>
+
+      <article class="process-card reveal">
+        <span class="step">STEP 02</span>
+        <h3>Strategize</h3>
+        <p>Build a practical marketing plan and select the right channels.</p>
+      </article>
+
+      <article class="process-card reveal">
+        <span class="step">STEP 03</span>
+        <h3>Execute</h3>
+        <p>Create and launch campaigns designed around your goals.</p>
+      </article>
+
+      <article class="process-card reveal">
+        <span class="step">STEP 04</span>
+        <h3>Optimize<
